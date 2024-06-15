@@ -2,7 +2,7 @@
 The repositry presents the code of a novel explainable AI method that consider the collineairty.<br>
 Here we only provided an example for a linear regression model, however the code is easy to modify to consider a classification model or with caterogrical variables.<br>
 ------------------------------------------------------------------<br>
-    total_effect = []
+    'total_effect = []'
     m=0
     for j in X.columns.to_list():
         effect = 0
