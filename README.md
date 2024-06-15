@@ -22,3 +22,11 @@ for j in X.columns.to_list():
     print('The effect of ', X.columns[m], round(effect*par_2, 4))
     m = m+1
 ```
+Then we creat a dataframe and sore based on the effect size
+```
+col = X.columns.to_list()
+df = pd.DataFrame({'Features': col, 'Effect size': total_effect})
+df.sort_values(by=['Effect size'], inplace=True, ascending=True, key=abs)
+df.reset_index(inplace=True, drop=True)
+df
+```
