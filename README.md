@@ -64,3 +64,4 @@ plt.show()
 ```
 ![Reg_NewXAI](https://github.com/amaa11/Additive-Effects-of-Collinearity/assets/43352625/d8673e35-f27e-4a01-9d3d-d1278b384a11)
 
+The effect size represents the change one unit in the feature of interest and the rest of the features in the model toward model prediction
