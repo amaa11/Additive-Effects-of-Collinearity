@@ -19,7 +19,7 @@ plt.show()
 ![Reg_Corr](https://github.com/amaa11/Additive-Effects-of-Collinearity/assets/43352625/f69e375d-2f4f-4431-8d4a-f6e525f097e6)
 
 ```
-# Note: here we did not divid the data into training and test. Howver, the user has the ability to divide the data and extract the coeff value from the test data
+# Note: here we did not divid the data into training and test. However, the user has the ability to divide the data and extract the coeff value from the test data
 X = Data[['F_1', 'F_2', 'F_3', 'F_4', 'F_5', 'F_6', 'F_7', 'F_8', 'F_9', 'F_10', 'F_11', 'F_12', 'F_13', 'F_14', 'F_15', 'F_16']]
 y = Data[['Target']]
 ```
