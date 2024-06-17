@@ -6,7 +6,24 @@ Here we only provided an example for a linear regression model, however the code
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
+Data = pd.read_csv('data.csv') # the data used here is the same one uploaded in the repositry
+dataplot = sb.heatmap(Data.corr()) 
+# displaying heatmap 
+fig = dataplot.get_figure()
+plt.rcParams['figure.figsize'] = [9, 7]
+fig.savefig("Reg_Corr.png", dpi=300)
+plt.xticks(fontsize=20)
+plt.yticks(fontsize=20)
+plt.show() 
+```
+![Reg_Corr](https://github.com/amaa11/Additive-Effects-of-Collinearity/assets/43352625/f69e375d-2f4f-4431-8d4a-f6e525f097e6)
+
+```
 # Note: here we did not divid the data into training and test. Howver, the user has the ability to divide the data and extract the coeff value from the test data
+X = Data[['F_1', 'F_2', 'F_3', 'F_4', 'F_5', 'F_6', 'F_7', 'F_8', 'F_9', 'F_10', 'F_11', 'F_12', 'F_13', 'F_14', 'F_15', 'F_16']]
+y = Data[['Target']]
+```
+```
 total_effect = []
 m=0
 for j in X.columns.to_list():
