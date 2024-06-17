@@ -45,3 +45,5 @@ plt.yticks(fontsize=14)
 plt.savefig("Reg_NewXAI.png", dpi=300)
 plt.show()
 ```
+![Reg_NewXAI](https://github.com/amaa11/Additive-Effects-of-Collinearity/assets/43352625/d8673e35-f27e-4a01-9d3d-d1278b384a11)
+
